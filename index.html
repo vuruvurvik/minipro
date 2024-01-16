@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Digital Restaurants</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Reviews</a>
+            <a href="#order">Orders</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <a href="login.html" class="fas fa-user" id="fa-user"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <button type="button" class="btn btn-success my-2 my-sm-0 cart" data-toggle="modal"
+               data-target="#staticBackdrop">
+                <i class="fas fa-shopping-cart total-count"></i>
+            </button>
+        </div>
+    </header>
+    <!-- <form action="" id="search-form">
+        <input type="search" placeholder="Search Here ..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form> -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <!-- One slide  -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Today's Special</span>
+                        <h3>Crispy Chicken</h3>
+                        <p> Crispy, golden perfection; juicy, flavorful bites; a tantalizing symphony of spices and satisfaction.</p>
+                        <!-- <a href="#" class="btn">order now</a> -->
+                        <button type="button" data-name="Chicken" data-price="600" class="default-btn btn border-radius-5">Order Now</button>
+
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-3.png" alt="">
+                    </div>
+                </div>
+                <!-- Two Slide  -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Today's Special</span>
+                        <h3>Cheesy Pizza</h3>
+                        <p>Melted cheese heaven; thin crust delight; savory toppings dance in a mouthwatering celebration.</p>
+                        <button type="button" data-name="Pizza" data-price="200" class="default-btn btn border-radius-5">Order Now</button>
+
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-1.png" alt="">
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Today's Special</span>
+                        <h3>Savory Burger</h3>
+                        <p>Juicy beef ecstasy; stacked layers of flavor; the ultimate handheld feast indulgence.</p>
+                        <button type="button" data-name="Burger" data-price="400" class="default-btn btn border-radius-5">Order Now</button>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="dishes" id="dishes">
+        <h3 class="sub-heading">Our Dishes</h3>
+        <h1 class="heading">Popular Dishes</h1>
+        <div class="box-container">
+            <!-- 1 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/pizza-1.png" alt="">
+                <h3>Pizza</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>250</span>
+                 <button type="button" data-name="Pizza" data-price="250" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            
+            <!-- 2 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/burger-1.png" alt="">
+                <h3>Chicken Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>150</span>
+                 <button type="button" data-name="ChickenBurger" data-price="150" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            
+            <!-- 3 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dessert-6.png" alt="">
+                <h3>Dessert</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>450</span>
+                 <button type="button" data-name="Dessert" data-price="450" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            
+            <!-- 4 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/burger-2.png" alt="">
+                <h3>Veg Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>150</span>
+                 <button type="button" data-name="VegBurger" data-price="150" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 5 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dessert-1.png" alt="">
+                <h3>Thick shake</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>100</span>
+                 <button type="button" data-name="ThickShake" data-price="100" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 6 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/drink-1.png" alt="">
+                <h3>Orange Juice</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>40</span>
+                 <button type="button" data-name="OrangeJuice" data-price="40" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+    <h3 class="sub-heading" > about us </h3> 
+    <h1 class="heading"> why choose us? </h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/qr2.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1>About Digital Restaurants</h1>
+            <h3>With the surge in restaurant culture, we introduce "Digital Restaurants" to enhance your dining experience. Say goodbye to long queues and waiting times. Embrace the future of dining!</h3>
+            <h3>Our innovative system allows you to access the digital menu through a QR Code on your table. Simply scan it, explore the menu on the restaurant website, and place your order. The order seamlessly reaches the chef, and the bill is generated on the website for easy digital payment.</h3>
+            <h3>By minimizing the need for waiters, we save you time and streamline the dining process. No more paper menus or order mistakes; our system ensures accuracy and efficiency. Join us in the digital revolution, where you are in control of your dining experience!</h3>
+            <h3>Experience the benefits of a cost-efficient, personalized service. Choose what you want, when you want it—from ordering to payment to feedback. Digital Restaurants: Where innovation meets your plate!</h3>
+            <div class="icons-container">
+                <div class="icons">
+                <i class="fas fa-shipping-fast"></i>
+                <span>free delivery</span>
+                </div>
+                <div class="icons">
+                <i class="fas fa-dollar-sign"></i>
+                <span>easy payments</span>
+                </div>
+                <div class="icons">
+                <i class="fas fa-headset"></i>
+                <span>24/7 service</span>
+                </div>
+            </div>
+            <a href="#" class="btn">learn more</a></div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">Menu</h3>
+        <h1 class="heading">Our Dishes</h1>
+        <div class="box-container">
+            <!-- 1 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-1.png" alt="">
+                <h3>Noodles</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>80</span>
+                 <button type="button" data-name="Noodles" data-price="80" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            
+            <!-- 2 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-2.png" alt="">
+                <h3>Egg Noodles</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>100</span>
+                 <button type="button" data-name="EggNoodles" data-price="100" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            
+            <!-- 3 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-3.png" alt="">
+                <h3>Pasta</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>200</span>
+                 <button type="button" data-name="Pasta" data-price="200" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            
+            <!-- 4 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-4.png" alt="">
+                <h3>Fish</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>400</span>
+                 <button type="button" data-name="Fish" data-price="400" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 5 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/burger-1.png" alt="">
+                <h3>Chicken Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>200</span>
+                 <button type="button" data-name="ChickenBurger" data-price="200" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 6 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/burger-2.png" alt="">
+                <h3>Grilled Chicken Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>400</span>
+                 <button type="button" data-name="GrilledChickenBurger" data-price="400" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 7 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dessert-1.png" alt="">
+                <h3>Strawberry Milkshake</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>100</span>
+                 <button type="button" data-name="StrawberryMilkshake" data-price="100" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 8 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dessert-2.png" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>150</span>
+                 <button type="button" data-name="ChocolateCake" data-price="150" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 9 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dessert-3.png" alt="">
+                <h3>Oreo Milkshake</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>100</span>
+                 <button type="button" data-name="OreoMilkshake" data-price="100" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 10 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dessert-4.png" alt="">
+                <h3>Cup Cake</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>100</span>
+                 <button type="button" data-name="CupCake" data-price="100" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 11 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dessert-5.png" alt="">
+                <h3>Ice Cream</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>80</span>
+                 <button type="button" data-name="IceCream" data-price="80" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 12 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dessert-6.png" alt="">
+                <h3>Cake</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>100</span>
+                 <button type="button" data-name="Cake" data-price="100" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 13 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/drink-1.png" alt="">
+                <h3>Orange Juice</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>40</span>
+                 <button type="button" data-name="OrangeJuice" data-price="40" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 14 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/drink-2.png" alt="">
+                <h3>Coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>50</span>
+                 <button type="button" data-name="Coffee" data-price="50" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 15 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/drink-3.png" alt="">
+                <h3>Lemon Juice</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>20</span>
+                 <button type="button" data-name="LemonJuice" data-price="20" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+            <!-- 16 -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/drink-4.png" alt="">
+                <h3>Watermelon Juice</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span><span>&#8377;</span>40</span>
+                 <button type="button" data-name="WatermelonJuice" data-price="40" class="default-btn btn border-radius-5">Add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews  -->
+    <section class="review" id="review">
+    <h3 class="sub-heading">Customer Reviews</h3>
+    <h1 class="heading">Top Rated Reviews</h1>
+    <div class="card-deck" >
+        <div class="card">
+          <img class="card-img-top" src="images/Person1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Mahesh Babu</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h5 class="card-text">Dum Masala Biryani untadhi bhayya</h5>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="images/Person2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Vijay</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h5 class="card-text">Verithanam</h5>
+
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="images/Person3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Prabhas</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h5 class="card-text">Worth varma .. </h5>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+        <h3 class="sub-heading">Order now</h3>
+        <h1 class="heading">Get 15% off</h1>
+        <form action="#order">
+            <div class="inputbox">
+                <div class="input">
+                    <span>Your name</span>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="input">
+                    <span>Your number</span>
+                    <input type="number" placeholder="Enter your number">
+                </div>
+            </div>
+            <div class="inputbox">
+                <div class="input">
+                    <span>Food name</span>
+                    <input type="text" placeholder="Enter food name">
+                </div>
+                <div class="input">
+                    <span>Additional food</span>
+                    <input type="text" placeholder="Extra with food">
+                </div>
+            </div>
+
+            <div class="inputbox">
+                <div class="input">
+                    <span>No of Orders</span>
+                    <input type="number" placeholder="No of Orders">
+                </div>
+                <div class="input">
+                    <span>Date and time</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+
+            <div class="inputbox">
+                <div class="input">
+                    <span>Enter your address</span>
+                    <textarea name="" placeholder="Enter your address" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>Your feedback</span>
+                    <textarea name="" id="" placeholder="Your feedback" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="submitbtn">
+            <input class="btn" type="submit" value="order now" class="btn">
+        </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-utensils"></i> Digital Restaurants
+            </h6>
+            <p>
+                Our innovative system allows you to access the digital menu through a QR Code on your table. Simply scan it, explore the menu on the restaurant website, and place your order. The order seamlessly reaches the chef, and the bill is generated on the website for easy digital payment.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Locations
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-muted">Hyderabad</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-muted">Chennai</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-muted">Delhi</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-muted">Mumbai</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#about" class="text-reset">About Us</a>
+            </p>
+            <p>
+              <a href="#review" class="text-reset">Review</a>
+            </p>
+            <p>
+              <a href="#order" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Hyderabad, Jubilee Hills, India</p>
+            <p>
+              <i class="fas fa-envelope me-3" style="text-transform: none;"></i>
+              digitalrestaurants@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 9182942119</p>
+            <p><i class="fas fa-print me-3"></i> 9948179087</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://digitalrestaurants.com/">DigitalRestaurants.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+     <!-- Modal -->
+     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+           <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+              </button>
+           </div>
+           <div class="modal-body">
+              <table class="show-cart table">
+    
+              </table>
+              <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success orderbtn clear-all" data-dismiss="modal" onclick="placeOrder()">Order Now</button> 
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-danger clear-all">Clear All</button> 
+            </div>
+        </div>
+     </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
